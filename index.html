@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!--
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="application.js"></script>
+-->
   </head>
   <body>
-    <script>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="home" href="#"></a></li>
+          <li><a class="notifications"></a></li>
+          <li><a class="messages"></a></li>
+          <li><a class="discover"></a></li>
+          <li><img id="angrybird" src="images/angrybird.png"></a></li>
+        </ul>
+      </nav>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
+    </header>
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
 
-      });
+    <aside class="profile">
+      <div id="profileborder">
+        <img id="qh" src="images/qh.jpg"/>
+      </div>
+      <div class="profbg"></div>
+      <h3>Quest Henkart</h3>
+      <p>@QuestHenkart</p>
 
-    </script>
+
+      <div id="stats">
+        <ul>
+          <li>TWEETS</li>
+          <li>FOLLOWING</li>
+          <li>FOLLOWERS</li>
+        </ul>
+        <!-- put jquery here -->
+      </div>
+    </aside>
+
+
+
+    <section id="main">
+    
+    </section>
+
   </body>
 </html>

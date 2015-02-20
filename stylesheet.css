@@ -1,0 +1,146 @@
+
+
+/* borrowed from Twitter's source code. It's a clever use of background image + color */
+body {
+	background-image: url(https://abs.twimg.com/images/themes/theme1/bg.png);
+    background-repeat: no-repeat;
+	background-color: #C0DEED;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+/* 
+      background-position: left 40px;
+      background-attachment: fixed;
+      background-repeat: repeat;
+*/
+
+
+
+
+
+/* Nav Bar */
+
+nav {
+	height: 45px;
+	background: #fff;
+	width: auto; /* why doesn't this stretch my navbar? */
+	margin: -10px;
+
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+ 
+}
+
+nav h1 {
+	text-align: center;
+}
+
+
+
+nav li {
+	float: left;
+}
+
+nav a {
+	display:block;
+	margin-top: 5px;
+	height: 40px;
+}
+.home {
+	background: url(images/home.png);
+	width: 90px;
+	margin-left: 75px
+}
+.notifications {
+	background: url(images/notifications.png);
+	width: 126px;
+	
+}
+.messages {
+	background: url(images/messages.png);
+	width: 117px;
+}
+.discover {
+	background: url(images/discover.png);
+	width: 107px;
+}
+nav a:hover, nav a:focus nav a:active {
+	background-position: 0 41px;
+}
+
+#angrybird {
+	background: url(images/angrybird.png);
+	width: 30px;
+	margin-top: 5px;
+	margin-left: 100px;
+
+
+
+}
+
+/*END NAVBAR*/
+
+
+
+/* PROFILE SECTION */
+.profile{
+	background-color: #fff;
+	margin: 25px 10px 10px 125px;
+	border-radius: 5px;
+	width: 300px;
+	height:200px;
+}
+.profile h3{
+	margin: 0 0 5px 95px; 
+}
+.profile p {
+	font-size:12px;
+	margin: -5px 0 0 95px; /*margin bottom was working and then became unresponsive */
+	color: #66757f;
+}
+.profbg{
+	background-color: #0084B4;
+	width: 300px;
+	height: 100px;
+	float:top;
+	border-radius: 5px;
+
+}
+#profileborder{
+	width:72px;
+	height:72px;
+	border: 3px solid #fff;
+	border-radius: 7px;
+	margin: 60px 0 0 10px;
+	overflow:hidden;
+	float:left;
+
+}
+#qh {
+	height:105px;	
+}
+
+#stats li{
+	display:inline;
+	font-size: 10px;
+	color:#8c9ca9;
+	margin-right: 30px;
+}
+#stats ul{
+	margin: 10px 0 0 20px;
+}
+
+/*END PROFILE SECTION */
+
+/* MAIN PANEL */
+
+#main{
+	width: 400px;
+	height: 600px;
+	background: #fff;
+	display: inline;
+	float: left;
+}
