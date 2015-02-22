@@ -75,7 +75,7 @@ nav a:hover, nav a:focus nav a:active {
 	background: url(images/angrybird.png);
 	width: 30px;
 	margin-top: 5px;
-	margin-left: 100px;
+	margin-left: 130px;
 
 
 
@@ -88,10 +88,11 @@ nav a:hover, nav a:focus nav a:active {
 /* PROFILE SECTION */
 .profile{
 	background-color: #fff;
-	margin: 25px 10px 10px 125px;
+	margin: 25px 10px 10px 50px;
 	border-radius: 5px;
 	width: 300px;
 	height:200px;
+	display:inline-block;
 }
 .profile h3{
 	margin: 0 0 5px 95px; 
@@ -106,10 +107,10 @@ nav a:hover, nav a:focus nav a:active {
 	width: 300px;
 	height: 100px;
 	float:top;
-	border-radius: 5px;
+	border-radius: 5px 5px 0 0;
 
 }
-#profileborder{
+.profileborder{
 	width:72px;
 	height:72px;
 	border: 3px solid #fff;
@@ -119,7 +120,7 @@ nav a:hover, nav a:focus nav a:active {
 	float:left;
 
 }
-#qh {
+.qh {
 	height:105px;	
 }
 
@@ -129,8 +130,20 @@ nav a:hover, nav a:focus nav a:active {
 	color:#8c9ca9;
 	margin-right: 30px;
 }
-#stats ul{
+#stats {
 	margin: 10px 0 0 20px;
+}
+
+
+#jquerystats li{
+	font-size: 18px;
+	font-weight: 500;
+	color:#0084B4;
+	display:inline-block;
+	margin: 3px 33px 0 33px;
+}
+#jquerystats li:last-child{
+	margin-left: 48px;
 }
 
 /*END PROFILE SECTION */
@@ -138,9 +151,103 @@ nav a:hover, nav a:focus nav a:active {
 /* MAIN PANEL */
 
 #main{
-	width: 400px;
+	width: 600px;
 	height: 600px;
 	background: #fff;
-	display: inline;
-	float: left;
+	float:right;
+	display:inline-block;
+	margin: 25px 550px 0 0;
+	border-radius: 6px 6px 0 0;
+	overflow:scroll;
+	position:fixed;
+
+}
+
+.tweet {
+	width: 600px;
+	height:55px;
+	background: #E5F2F7;
+	border-radius: 6px 6px 0 0;
+}
+
+.tweet .profileborder {
+	width:32px;
+	height:32px;
+	border: 0;
+	position: fixed;
+	top: 10px;
+	margin-left: 30px;
+	display:inline-block;
+	float:left;
+
+}
+.tweet .qh{
+	height: 40px;
+}
+
+
+form {
+	display:inline-block;
+	float:right;
+	margin: 15px 20px 0 0;
+	position: relative;
+}
+#tweeter {
+	width: 500px;
+	height: 20px;
+	float:right;
+	display: inline-block;
+	position: relative;
+}
+.placeholder{
+	color: #E5F2F7;
+}
+
+.tweets li{
+	/*margin-left: 30px;*/
+	border-bottom: 1px solid #bbbbbb;
+	display:block;
+	font-size:;
+
+}
+.tweets .username{
+	float:left;
+	display:inline-block;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.tweets .twitterid{
+	font-size:11px;
+	color: #8899a6;
+	display:inline-block;
+	margin: 18px 0 0 0;
+	padding-left:5px;
+}
+
+.tweets .message{
+	font-size: 13px;
+	display:block;
+	margin-top: 0px;
+}
+.tweets a{
+	color:#0084B4;
+	text-decoration: none;
+}
+
+.tweets .twitpic {
+	width: 60px;
+}
+
+.tweets .twitpicborder {
+	margin: 13px 10px 0 10px;
+	width:48px;
+	height:48px;
+	border: 0;
+	display:inline-block;
+	float:left;
+	border-radius: 6px;
+	overflow:hidden;
+
+
 }

@@ -2,11 +2,14 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<!--
+
     <script src="jquery.js"></script>
+    <script src="moment.js"></script>
+
     <script src="data_generator.js"></script>
     <script src="application.js"></script>
--->
+
+
   </head>
   <body>
     <header>
@@ -24,29 +27,47 @@
 
 
     <aside class="profile">
-      <div id="profileborder">
-        <img id="qh" src="images/qh.jpg"/>
+      <div class="profileborder">
+        <img class="qh" src="images/qh.jpg"/>
       </div>
       <div class="profbg"></div>
       <h3>Quest Henkart</h3>
       <p>@QuestHenkart</p>
 
 
-      <div id="stats">
-        <ul>
+      <div>
+        <ul id="stats">
           <li>TWEETS</li>
           <li>FOLLOWING</li>
           <li>FOLLOWERS</li>
         </ul>
         <!-- put jquery here -->
+        <ul id="jquerystats">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </aside>
 
 
 
     <section id="main">
-    
+      <aside class="tweet">
+        <div class="profileborder">
+          <img class="qh" src="images/qh.jpg"/>
+        </div>
+        <form>
+            <input type="text" placeholder="What's happening?" id="tweeter" />
+        </form>
+      </aside>
+      <ul class="tweets">
+      <li><p>test</p></li>
+      </ul>
     </section>
 
+    
   </body>
+
+
 </html>
