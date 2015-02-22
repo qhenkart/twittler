@@ -203,21 +203,29 @@ form {
 	color: #E5F2F7;
 }
 
+
 .tweets li{
 	/*margin-left: 30px;*/
 	border-bottom: 1px solid #d3d3d3;
 	display:block;
-	font-size:;
 
 }
-.tweets .username{
+.tweets li:hover{
+	background-color:#eef7fa;
+}
+.username{
 	float:left;
 	display:inline-block;
 	font-size: 14px;
 	font-weight: bold;
 
 }
-.tweets .twitterid{
+.tweets .username:hover {
+	text-decoration: underline;
+	color: #2b7bb9;
+
+}
+.twitterid{
 	font-size:11px;
 	color: #8899a6;
 	display:inline-block;
@@ -234,12 +242,15 @@ form {
 	color:#0084B4;
 	text-decoration: none;
 }
-
-.tweets .twitpic {
-	width: 60px;
+.tweets a:hover{
+	text-decoration: none;
 }
 
-.tweets .twitpicborder {
+.twitpic {
+	width: 50px;
+}
+
+.twitpicborder {
 	margin: 13px 10px 0 10px;
 	width:48px;
 	height:48px;
@@ -260,4 +271,91 @@ form {
 	font-size: 13px;
 	text-align:center;
 	color:#0084B4;
+}
+
+/*END OF MAIN*/
+
+
+/*WHO TO FOLLOW*/
+
+#toFollow{
+	background-color: #fff;
+	margin: 25px 0 0 613px;
+	border-radius: 5px;
+	width: 300px;
+	height:550px;
+	display:inline-block;
+	float:right;
+	position:fixed;
+}
+#toFollow #title2{
+	color: #0084B4;
+	font-size: 12px;
+	position:fixed;
+	margin: -16px 0 25px 135px;
+
+}
+#toFollow #title{
+	color: #66756f;
+	font-size: 18px;
+	margin: 20px 0 0 20px;
+
+}
+
+
+.follows .twitpicborder{
+	float:left;
+}
+.follows li{
+	display:block;
+	margin: 10px 0 10px 10px;
+}
+.follows .username {
+	margin-top: 20px
+}
+.follows .twitterid{
+	margin-top:23px;
+}
+#followbutton{
+	display:inline-block;
+	margin: -10px 90px 0 0;
+
+}
+
+/*END OF WHO TO FOLLOW*/
+
+/* TRENDS */
+
+#trends{
+	background-color: #fff;
+	margin: 240px 600px 10px -310px;
+	border-radius: 5px;
+	width: 300px;
+	height:400px;
+	display:inline-block;
+	float:left;
+	position:fixed;
+	overflow:hidden;
+}
+#trends p{
+	margin: 20px 0 0 15px;
+	color:#66757f;
+	font-size: 18px;
+}
+#trends #blah{
+	font-size:12px;
+	color: #0084B4;
+	position: fixed;
+	display:inline;
+	margin: -17px 0 90px 80px;
+}
+
+#trending li{
+	margin: 5px 0 5px 17px;
+	color: #0084B4;
+	font-size:13px;
+	line-height: 20px;
+}
+#trending a{
+	text-decoration: none;
 }
