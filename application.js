@@ -50,7 +50,7 @@ $(document).ready(function(){
       if (hash != undefined) {
         $(".tweets").find("li").last().find("p").last().append(hashtag);
         $('<li></li>').appendTo($("#trending"));
-        if (trends < 10) $("#trending").find("li").last().append(hashtag);
+        if (trends < 13) $("#trending").find("li").last().append(hashtag);
         trends++;
       }
 
