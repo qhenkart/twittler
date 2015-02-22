@@ -46,14 +46,17 @@ var generateRandomTweet = function(){
   addTweet(tweet);
 };
 
+//sets 10 base tweets upon refresh
 for(var i = 0; i < 10; i++){
   generateRandomTweet();
 }
+
 
 var scheduleNextTweet = function(){
   generateRandomTweet();
   setTimeout(scheduleNextTweet, Math.random() * 1500);
 };
+//creates a new tweet between 0-1500 miliseconds
 scheduleNextTweet();
 
 // utility function for letting students add "write a tweet" functionality

@@ -2,12 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
+    <script> </script>
     <script src="jquery.js"></script>
     <script src="moment.js"></script>
+    <script src="application.js"></script>
 
     <script src="data_generator.js"></script>
-    <script src="application.js"></script>
 
 
   </head>
@@ -28,7 +28,7 @@
 
     <aside class="profile">
       <div class="profileborder">
-        <img class="qh" src="images/qh.jpg"/>
+        <img class="qh" src="images/questhenkart.jpg"/>
       </div>
       <div class="profbg"></div>
       <h3>Quest Henkart</h3>
@@ -55,14 +55,18 @@
     <section id="main">
       <aside class="tweet">
         <div class="profileborder">
-          <img class="qh" src="images/qh.jpg"/>
+          <img class="qh" src="images/questhenkart.jpg"/>
         </div>
-        <form>
+        <form name="tweetinput">
             <input type="text" placeholder="What's happening?" id="tweeter" />
+            <button style="position: absolute; left: -9999px"></button>
+           <!-- <input type="submit" value="Submit" style="position: absolute; left: -9999px"/>-->
         </form>
       </aside>
+      <aside class="checkTweets">
+        <p></p>
+      </aside>
       <ul class="tweets">
-      <li><p>test</p></li>
       </ul>
     </section>
 
