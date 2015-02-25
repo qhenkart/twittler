@@ -11,7 +11,6 @@ $(document).ready(function(){
   var folksToFollow = ['burningman', 'sfweekly', 'elonmusk', 'hackreactor', 'nytimes'];
   var trends = 0;
 
-
 //Tweet Machine populates the Tweet area, takes a parameter to populate the newsfeed with one user
   var tweetMachine = function(username){
     //clears the newsfeed
@@ -87,13 +86,16 @@ $(document).ready(function(){
 
 //create Tweets
   $("button").click(function(){
+    event.preventDefault();
     myMessage = $("#tweeter").val();
-    streams.users.questhenkart = [];
-    writeTweet(myMessage);
-    myTweets++;
-    tweetMachine();
-   // delete streams.users.questhenkart
-    $('#tweetinput').trigger("reset");
+    if (myMessage != ''){
+      streams.users.questhenkart = [];
+      writeTweet(myMessage);
+      myTweets++;
+      tweetMachine();
+     // delete streams.users.questhenkart
+      $('#tweetinput').trigger("reset");
+    }
   });
       
       //shows the personal timeline upon clicking a username
